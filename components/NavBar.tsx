@@ -6,7 +6,7 @@ import { HiOutlineMenuAlt2, HiOutlineMenuAlt3 } from "react-icons/hi";
 import { MdClose } from "react-icons/md";
 
 const NavBar = () => {
-  const [isActive, setIsActive] = useState<boolean>(true);
+  const [isActive, setIsActive] = useState<boolean>(false);
   return (
     <header className="relative">
       <nav className="flex justify-between items-center p-2 md:p-8 bg-zinc-100 rounded shadow">
@@ -15,7 +15,7 @@ const NavBar = () => {
             <div className="hidden md:block lg:hidden cursor-pointer" onClick={()=> setIsActive(prev => !prev)}>
               {!isActive ? <HiOutlineMenuAlt2 /> : <MdClose />}
             </div>
-            <h3 className="md:text-2xl">
+            <h3 className="md:text-2xl logo">
               <span className="font-semibold text-primary">Kubi</span>
               <span className="text-secondary">Force</span>
             </h3>
@@ -51,10 +51,10 @@ const NavBar = () => {
           <li className="signup text-sm">Try for free</li>
         </ul>
         <div className="md:hidden cursor-pointer" onClick={()=> setIsActive(prev => !prev)}>
-        {!isActive ? <HiOutlineMenuAlt2 /> : <MdClose />}
+        {!isActive ? <HiOutlineMenuAlt3 /> : <MdClose />}
         </div>
       </nav>
-      {isActive && <section className="lg:hidden absolute w-screen shadow-md pb-4">
+      {isActive && <section className="lg:hidden absolute w-screen shadow-md pb-4 bg-white">
         <ul className="flex flex-col items-center gap-3 py-4 text-sm font-semibold">
           <li className="cursor-pointer">Products</li>
           <li className="cursor-pointer">Learning</li>
