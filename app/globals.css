@@ -60,3 +60,7 @@
 .menu-items:hover {
   @apply text-secondary;
 }
+
+.benefits{
+  height: 50vh;
+}

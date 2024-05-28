@@ -3,12 +3,13 @@ import Image from "next/image";
 import hero from "@/public/images/hero.png";
 
 const Hero = () => {
-  return (
-    <section className="flex flex-col items-center lg:flex-row justify-center">
+    return (
+    <section className="flex flex-col items-center lg:flex-row justify-center py-48">
       <div className="p-2 lg:w-1/3">
-        <h1 className="text-2xl font-semibold text-secondary">
-          Unlock Customer Success with Our Advanced CRM Solution - Streamline
-          Your Business Operations Today!
+        <h1 className="text-4xl mb-3 font-semibold text-secondary">
+          {/* Unlock Customer Success with Our Advanced CRM Solution - Streamline
+          Your Business Operations Today! */}
+          Streamline Your Business with KubiForce CRM
         </h1>
         <p className="mb-4">
           Take Control of Your Customer Relationships - Dive Deeper into Our
