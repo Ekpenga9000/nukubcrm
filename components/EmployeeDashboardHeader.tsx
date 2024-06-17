@@ -14,9 +14,9 @@ const EmployeeDashboardHeader = () => {
         </div>
 
         <ul className="flex items-center gap-4">
-          <li>Search</li>
+          <li>Quick Search</li>
           <li>Recents</li>
-          <li>Add Customer</li>
+          <li>Quick Add</li>
           <li>Filter</li>
         </ul>
 

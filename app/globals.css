@@ -137,3 +137,21 @@
 .benefits {
   height: 50vh;
 }
+
+.dash-card{
+  @apply shadow-sm flex justify-between items-center px-4 py-8 rounded-sm cursor-pointer relative;
+  transition: 0.4s ease;
+  background-color: #f89444;
+  overflow: hidden;
+}
+
+.dash-card span{
+  color: #f89444;
+  transition: 0.4s ease;
+  @apply absolute right-4;
+}
+
+.dash-card:hover span{
+  /* @apply text-secondary text-2xl text-zinc-900; */
+  @apply text-[9rem] text-zinc-900;
+}
